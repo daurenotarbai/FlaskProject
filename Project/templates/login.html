@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+{%block title%}
+<title>Sign in</title>
+{%endblock%}
+{%block body%}
+
+	<!-- Banner -->
+	<div class="sec-banner bg0 p-t-80 p-b-50">
+		<div class="container">
+			<div class="row">
+				<form action="/login" method='POST'>
+					<h4 class="mtext-105 cl2 txt-center p-b-30">
+						Log In
+					</h4>
+
+					<div class="bor8 m-b-20 how-pos4-parent">
+						<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="username">
+						
+					</div>
+
+					<div class="bor8 m-b-20 how-pos4-parent">
+						<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="password" name="password" placeholder="password">
+					
+					</div>
+					remember
+					<input class="stext-111 cl2 plh3  p-l-62 p-r-30" type="checkbox" name="remember" placeholder="Remember">
+
+					</br>
+					<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
+						Submit
+					</button>
+				</form>
+
+
+
+			</div>
+		</div>
+	</div>
+{%endblock%}
